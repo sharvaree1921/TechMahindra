@@ -1,8 +1,8 @@
-### Week 1: 06 July 2021 to 12 July 2021
+## Week 1: 06 July 2021 to 12 July 2021
 
 Following is the summary or takeaway from some of the research papers available from the internet
 
-#### 1. [A Convolutional Neural Network based solution for Pipeline Leak Detection (Oct'19)](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/AConvolutionalNeuralNetworkBasedSolutionforPipelineLeakDetection.pdf)
+### 1. [A Convolutional Neural Network based solution for Pipeline Leak Detection (Oct'19)](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/AConvolutionalNeuralNetworkBasedSolutionforPipelineLeakDetection.pdf)
 
 - A novel approach for pipeline leak detection
 in which video images from **IoT cameras** installed across
@@ -53,7 +53,7 @@ of response time than alternative solutions that use UAVs
 since the proposed IoT cameras will be fixed and stream
 continuously from the pipeline.
 
-#### 2. [Applying Convolutional Neural Networks to Detect Natural Gas Leaks in Wellhead Images (Oct'20)](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/09226415.pdf)
+### 2. [Applying Convolutional Neural Networks to Detect Natural Gas Leaks in Wellhead Images (Oct'20)](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/09226415.pdf)
 
 - Previous studies used image processing techniques associated with a novelty filter classifier to detect presence or absence of visible cloud of hydrocarbon vapors i.e. Natural Gas plume in cctv frames. This paper introduces improved method that enhances results obtained previously along with the **Gradient-weighted Class Activation Mapping Algorithm(Grad-CAM)** to identify natural gas leaks. **CNN** are used to classify CCTV images.
 - Accuracy: 99.78% and False Negative Rate: 0.00%
@@ -108,3 +108,7 @@ the gas cloud in original images
 ![d1](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-53-25.png)
 ![d2](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-54-05.png)
 ![d3](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-54-53.png)
+
+### 3. [Machine Vision for Natural Gas Methane Emissions detection using an infrared camera](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/1-s2.0-S030626191931685X-main.pdf)
+
+
