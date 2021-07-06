@@ -71,9 +71,9 @@ Mapping (Grad-CAM) technique is used.
 ![image2](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-14-45.png)
 - Dataset:
    - Initially there were 3060 samples with 184x160 pixels for each image. After reduction and resizing 2980 images with 186x186 pixels were obtained. 2000 without leak + 980 with leak images were peresent. 
-   - To prevent overfitting, on-the-fly data augmentation(online augmentation) is performed. Rotation/ translation etc. of images is done in it.
-- To decrease complexity, LCNN(Long CNN) with 18 CNN layers is used in order to decrease no. of units. 
-- MCNN (Medium CNN) and SCNN(Short CNN) models are implemented with 6 and 2 layers respectively.
+   - To prevent overfitting, **on-the-fly data augmentation(online augmentation)** is performed. Rotation/ translation etc. of images is done in it.
+- To decrease complexity, **LCNN(Long CNN)** with 18 CNN layers is used in order to decrease no. of units. 
+- **MCNN (Medium CNN)** and **SCNN(Short CNN)** models are implemented with 6 and 2 layers respectively.
 
 ![image3](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-31-38.png)
 
@@ -82,3 +82,24 @@ Mapping (Grad-CAM) technique is used.
 ![image5](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-36-13.png)
 
 ![image6](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-41-46.png)
+
+- **Results and Conclusion**: To achieve our
+goal, we evaluated the performance of 27 different CNN
+models. The best performing model, BPM, had the follow-
+ing characteristics: 18 convolution layer architecture, SGDM
+optimization algorithm and dropout regularization technique.
+The accuracy obtained in the test set, 99.78%, is higher
+than similar studies found in the literature, which used the
+novelty classifier technique [16]. After applying a Chi-square
+(χ 2 ) hypothesis testing, it became clear that this higher
+performance is significant at a 99% significance level. The
+aforementioned accuracy obtained in the test dataset is close
+to the accuracy obtained in the train set, 100%, suggesting
+that the generalization techniques employed avoid overfit-
+ting. We also showed that the BPM outperforms pre-trained
+networks AlexNet, DenseNet-201, GoogLeNet, MobileNet-
+v2, ResNet-18 and VGG-16. Additionally, these pre-trained
+networks result in FNs, while BPM presented no FNs. The
+Grad-CAM tool proved to be of great importance for energy
+facility operators, as it shows, with heatmaps, the location of
+the gas cloud in original images
