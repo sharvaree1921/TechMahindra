@@ -8,4 +8,3 @@
 ### Supplementary Projects
 - Anomoly or fault detection in the industrial manufacturing units
 - Leakage detection in Pipeline
-- 
