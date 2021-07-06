@@ -53,4 +53,21 @@ of response time than alternative solutions that use UAVs
 since the proposed IoT cameras will be fixed and stream
 continuously from the pipeline.
 
+#### 2. [Applying Convolutional Neural Networks
+to Detect Natural Gas Leaks
+in Wellhead Images (Oct'20)](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/09226415.pdf)
 
+- Previous studies used image processing techniques associated with a novelty filter classifier to detect presence or absence of visible cloud of hydrocarbon vapors i.e. Natural Gas plume in cctv frames. This paper introduces improved method that enhances results obtained previously along with the **Gradient-weighted Class Activation Mapping Algorithm(Grad-CAM)** to identify natural gas leaks. **CNN** are used to classify CCTV images.
+- Accuracy: 99.78% and False Negative Rate: 0.00%
+- Previous works of detection of combustible images used thermal images, whereas this study uses visible images(Simple CCTV frames)
+- Another objective of the work is to provide a **location
+map** that highlights the most important regions in the image
+that contributed to the detection of natural gas leakage, that
+is, this work will generate visual explanations of the leak,
+which would help untrained users to discern the leak location.
+For this the Gradient-weighted Class Activation
+Mapping (Grad-CAM) technique is used.
+- To minimize overfitting, **data augmentation** technique and **transfer learning** techniques are used. in tL, pre-trained deep networks were evaluated such as _Alex Net_, _Dense Net_, _Google Net_, _MobileNet-V2_, _ResNet-18_, _VGG-16_
+- Refer the [research paper](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/09226415.pdf) directly to study related works of Novelty filter, past work on cloud, smoke classification, use of GANs, etc.
+-  Methodolgy:
+![]()
