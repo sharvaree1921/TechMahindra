@@ -109,12 +109,15 @@ the gas cloud in original images
 ![d2](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-54-05.png)
 ![d3](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/Screenshot%20from%202021-07-06%2011-54-53.png)
 
+## Week 4: 01/08/2021-08/08/2021
+
 ### 3. [Machine Vision for Natural Gas Methane Emissions detection using an infrared camera](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/1-s2.0-S030626191931685X-main.pdf)
 
-Optical gas imaging (OGI) is a widely-used method to detect
+**Optical gas imaging (OGI)** is a widely-used method to detect
 methane leaks, but is labor-intensive and cannot provide leak detection results without operators’ judgment. The authors developed a computer vision approach for OGI-based leak detection using convolutional neural
 networks (CNN) trained on methane leak images to enable automatic detection.
 
+**Highlights**
 1. They collected ∼1 M frames of
 labeled videos of methane leaks from different leaking equipment, covering a wide range of leak sizes
 (5.3–2051.6 g CH 4 /h) and imaging distances (4.6–15.6 m)
@@ -125,5 +128,25 @@ collectively called GasNet, to detect plumes in videos
 
 They explored the
 sensitivity of results to the CNN structure, with a moderate-complexity variant performing best across distances.
+
+- Because of its ease of use, IR OGI (Infra Red Optical Gas Imaging) cameras have become the most
+commonly used LDAR(leak Detection and Repair) technology
+- Gas plumes can be visualized in the
+IR camera: absorptive plumes look black and emissive plumes look
+white.
+- Despite its widespread use, OGI performance is affected by en-
+vironmental conditions, operator experience, survey practices, leak size
+distributions and gas composition
+
+Despite the usefulness of OGI, a number of fundamental challenges
+exist: 
+(1) labor costs for manual OGI surveys are high 
+(2) continuous monitoring with IR cameras is infeasible
+(3) IR cameras cannot
+provide real-time feedback of leak detection results without operators’
+judgement, and 
+(4) the quality of survey varies between different OGI
+operators
+
 
 
