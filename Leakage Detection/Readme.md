@@ -111,4 +111,19 @@ the gas cloud in original images
 
 ### 3. [Machine Vision for Natural Gas Methane Emissions detection using an infrared camera](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/1-s2.0-S030626191931685X-main.pdf)
 
+Optical gas imaging (OGI) is a widely-used method to detect
+methane leaks, but is labor-intensive and cannot provide leak detection results without operators’ judgment. The authors developed a computer vision approach for OGI-based leak detection using convolutional neural
+networks (CNN) trained on methane leak images to enable automatic detection.
+
+1. They collected ∼1 M frames of
+labeled videos of methane leaks from different leaking equipment, covering a wide range of leak sizes
+(5.3–2051.6 g CH 4 /h) and imaging distances (4.6–15.6 m)
+2. They examined different background subtrac-
+tion methods to extract the methane plume in the foreground
+3. They then tested three CNN model variants,
+collectively called GasNet, to detect plumes in videos
+
+They explored the
+sensitivity of results to the CNN structure, with a moderate-complexity variant performing best across distances.
+
 
