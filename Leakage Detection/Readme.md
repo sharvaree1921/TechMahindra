@@ -162,7 +162,7 @@ explicitly explain the CNN model. Finally, a baseline model that does
 not use CNN is described as a point of comparison for the accuracy of
 the results.
 
-[GLD1](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/GLD1.png)
+![GLD1](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/GLD1.png)
 
 1. For the fixed background
 subtraction method, we use the average of all the frames from the class-
@@ -185,20 +185,20 @@ static and moving pixels or colors. We use an adaptive background
 mixture model which chooses the appropriate number of Gaussian
 distribution for each pixel.
 
-[GLD2](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD2.png)
+![GLD2](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD2.png)
 
 Now with the use of the moving average background subtraction
 method, the GasNet-2 architecture, we generate the curves of prob-
 ability of correct assessment.
 
-[GLD3](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD3.png)
+![GLD3](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD3.png)
 
 We find that the imaging distance is the most important parameter
 affecting the effectiveness of automated OGI-based technology
 
-[GLD4](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD4.png)
+![GLD4](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD4.png)
 
-[GLD5](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD5.png)
+![GLD5](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD5.png)
 
 CNN model performs better than the optical-flow
 based change detection algorithm. GasNet with a moderate-complexity
