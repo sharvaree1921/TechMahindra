@@ -140,6 +140,7 @@ distributions and gas composition
 
 Despite the usefulness of OGI, a number of fundamental challenges
 exist: 
+
 (1) labor costs for manual OGI surveys are high 
 (2) continuous monitoring with IR cameras is infeasible
 (3) IR cameras cannot
@@ -148,5 +149,66 @@ judgement, and
 (4) the quality of survey varies between different OGI
 operators
 
+**Dataset GasVid:**
+In all GasVid video segments, the
+actual leak rate is known and listed. Videos were taken across a range of
+environmental conditions, camera orientations, and imaging distances,
+representing a realistic range of leak scenarios.
 
+**Methodology:**
+We introduce three background subtraction methods, one
+image normalization method, and three CNN model variants. We also
+explicitly explain the CNN model. Finally, a baseline model that does
+not use CNN is described as a point of comparison for the accuracy of
+the results.
 
+[GLD1](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage%20Detection/Images/GLD1.png)
+
+1. For the fixed background
+subtraction method, we use the average of all the frames from the class-
+0 segment (i.e., non-leaking segment) as the background image for the corresponding 24-min video at a given imaging distance and camera
+orientation. Thus, in the fixed background case, every leak frame from
+the video is assumed to have the same background scene.
+
+2. Instead of having a fixed background for all frames in one video, we
+can generate a moving average background for every frame in the video. Our method creates a background image for each frame as the
+median of the previous 210 images. This is equivalent to the median
+frame from a moving lagged 14-s-long video. The idea behind moving
+average background is that smoothing out plume variations over a
+multi-second period, we can subtract the background to emphasize the
+frame-specific variation in the plume.
+
+3. The Mixture of Gaussians (MOG)-based background subtraction
+involves learning a probabilistic model of each pixel using an appro-
+priate number of Gaussian distributions of pixel intensities to identify
+static and moving pixels or colors. We use an adaptive background
+mixture model which chooses the appropriate number of Gaussian
+distribution for each pixel.
+
+[GLD2](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD2.png)
+
+Now with the use of the moving average background subtraction
+method, the GasNet-2 architecture, we generate the curves of prob-
+ability of correct assessment.
+
+[GLD3](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD3.png)
+
+We find that the imaging distance is the most important parameter
+affecting the effectiveness of automated OGI-based technology
+
+[GLD4](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD4.png)
+
+[GLD5](https://github.com/sharvaree1921/TechMahindra/blob/main/Leakage Detection/Images/GLD5.png)
+
+CNN model performs better than the optical-flow
+based change detection algorithm. GasNet with a moderate-complexity
+variant generates the best results across distances. From the probability
+curves, the detection accuracy can achieve as high as 99%. The overall
+detection accuracy can be above 95% by using model training ag-
+gregation method 3.
+
+Currently, although the GasVid
+dataset was collected from only one test environment, the algorithm is
+expected to perform well in detecting real-world leaks, because the
+background subtraction method allows the GasNet to focus on just the
+leaks regardless of the leak location or background condition.
